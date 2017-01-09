@@ -1,0 +1,349 @@
+body {
+    background-color: #E1E1E6;
+    margin: 0px;
+    padding: 0px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #606060;
+    -webkit-text-size-adjust: none;
+}
+.topline {
+    border-top: 7px solid #5c307d;
+}
+.en {
+    color: #4d1379;
+    float: right;
+}
+#logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+figure#logo img#header_cuhk_logo {
+    width: 100%;
+    margin-left: 0px;
+}
+#body-frame {
+	max-width: 973px; 
+	margin: auto;
+	background: #FFF; 
+}
+#search_lang_nav {
+    float: right;
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 13px;
+}
+div#siteSearchwrapper {
+    display: inline-block;
+}
+input#sitesearchbox {
+    font-size: 12px;
+    width: 200px;
+    height: 30px;
+    padding: 2px 0px 0px 5px;
+    font-style: italic;
+    border: 1px solid #CCC;
+    margin: 0 0 0 0;
+}
+input#siteSearchbox_submit {
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    position: relative;
+    top: 9px;
+}
+div#topmenu-language {
+    display: inline-block;
+}
+.navbar {
+	margin-bottom: 0px;
+    min-height: 32px !important;
+    border-width: 1px 0px 1px 0px;
+    border-color: #CCC;
+    border-style: solid;
+    border-radius: 0px;
+    width: 100%;
+    -moz-box-shadow: inset 0px 0px 1px #edf9ff;
+    -webkit-box-shadow: inset 0px 0px 1px #edf9ff;
+    box-shadow: inset 0px 0px 1px #edf9ff;
+}
+.mynav {
+	padding-left: 40px;
+    margin-bottom: 0;
+    list-style: none;
+    padding-right: 40px;
+}
+.mynav li {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.mynav>li>a {
+    line-height: 2.5;
+    color: #606060;
+    display: block;
+    text-align: center;
+    border: none;
+    background: none;
+    font-weight: normal;
+    font-size: 16px;
+}
+#mynav ul {
+    background: #5c307d;
+    position: absolute;
+    width: 250px;
+    z-index: 2;
+    padding: 5px 0;
+    display: none;
+}
+#mynav ul li {
+    float: none;
+    display: block;
+    padding: 0;
+    margin-left: 20px;
+}
+#mynav ul li a {
+    line-height: 38px;
+    font-size: 14px;
+    color: #fff;
+    padding: 0 0 0 25px;
+}
+a.hassub:hover {
+	color: #fff;
+	background-color: #5c307d;
+}
+.homepage-slider { 
+    margin: 0 auto;
+    width: 100%;
+    max-width: 973px;
+    margin: auto;
+    height: auto;
+    overflow: visible;
+    height: 400px;
+}
+.carousel-indicators {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0px 5px;
+    background-color: #6C6D6F;
+    text-indent: 0px;
+    cursor: pointer;
+    border-radius: 0;
+    border: none;
+}
+.carousel-indicators .active {
+    background-color: #6E1E6F;
+    border: 1px solid #fff;
+    margin: 0px 5px;
+}
+#main_content.tiny-content {
+	min-height: 400px;
+}
+
+@media (min-width:798px) {	
+	div#body-frame { box-shadow: 0px 5px 10px 0px #4a4a4a; }
+}
+.full-col { 
+	width: 100%;
+ 	max-width: 973px;
+ 	margin: auto;
+ 	height: auto;
+ 	overflow: visible;
+    background: #fff url(../images/bg.jpg) repeat-x top;
+}
+a {
+    color: #333333;
+    text-decoration: none;
+}
+a:hover { 
+	text-decoration: none;
+	color: #4F608C;
+}
+ul {
+	padding: 0px;
+}
+ul li {
+	list-style: none;
+}
+.sections {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.item-title {
+	margin-top: 12px;
+    margin-bottom: 0px;
+    color: #FFF;
+    padding: 8px 10px;
+    position: relative;
+    background-color: #333333;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#title-news {
+	background-color: #666;
+	margin-left: 5px;
+    margin-right: 5px;
+}
+#title-tea {
+	background-color: #DF8E01;
+}
+#title-lecture {
+	background-color: #5c307d;
+}
+#title-resource {
+	background-color: #A62F0F;
+}
+#title-view {
+	background-color: #01888E;
+}
+.news-list {
+	margin-top: 10px;
+}
+
+
+h2.item-title:after {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    content: " ";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 10px 10px;
+    border-color: transparent transparent #ffffff transparent;
+}
+.news-list li {
+	border-bottom: dashed 1px #b1b1b1;
+    line-height: 1.5em;
+	padding: 5px 0px;
+    margin: 0px 8px;
+}
+.news-list p {
+	font-size: 12px;
+    border-left: solid 5px #333333;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+#homepage_content {
+	background: #FFF;
+    display: block;
+    overflow: auto;
+}
+#homepage_content aside {
+    background: #FFF;
+    padding: 0 0 0 0;
+    border-right: 1px solid #ebebeb;
+}
+#news {
+	padding:  0 0 0 0;
+}
+.home_subsection {
+	height: 335px;
+	border-width: 1px;
+    border-color: #EBEBEB;
+    border-style: solid;
+}
+.home_subsection article a {
+    display: block;
+    width: 100%;
+    min-height: 287px;
+    background-color: white;
+    padding-top: 20px;
+}
+.home_subsection article a:hover {
+	background-color: rgb(245, 238, 245);
+	text-decoration: none;
+}
+.home_subsection article a img {
+    border: 0px;
+    width: 300px;
+    height: 176px;
+    display: block;
+    margin: 15px auto;
+    margin-top: 0px;
+}
+.home_subsection article a p {
+    font-size: 1.167em;
+    font-weight: bold;
+    line-height: 1.3;
+    margin-left: 22px;
+}
+.more {
+	float: right;
+	margin-right: 35px;
+}
+.more .btn {
+    -moz-border-radius: 4px / 4px;
+    -webkit-border-radius: 4px 4px;
+    border-radius: 4px / 4px;
+    color: #494949;
+    background-color: #C8C8C8;
+    font-size: 0.8em;
+    padding: 3px 10px;
+}
+#footer {
+    height: 112px;
+    padding: 0px;
+}
+.relative {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #e6e0e0;
+}
+.inner {
+    width: auto;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.relative-button {
+    text-align: center;
+}
+.small_bu {
+    background: #c2c2c2;
+    padding: 6px 25px;
+    font-size: 12px;
+    color: #050505;
+    border-radius: 2px;
+    margin-left: 20px;
+    display: inline-block;
+    padding-bottom: 3px;
+    margin-top: 5px;
+}
+#bottom {
+    line-height: 50px;
+    text-align: center;
+    font-size: 12px;
+    color:#a5a2a7;
+    background: #22132d;
+}
+#bottom span {
+    display: inline-block;
+    text-indent: 1.5em;
+}
+#qrcode {
+    width: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.nav-left {
+    margin-top: 20px;
+}
+.navbar-header {
+    background-color: #5c357d;
+}
