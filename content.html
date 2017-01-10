@@ -33,7 +33,7 @@
                 <li>
                     #set ($subChannels = $cms.getChildren($channel))
                     #if ($subChannels.size() > 0)
-                    <a class="nav-li" href="$cms.getUrl($channel)" data-toggle="collapse" aria-expanded="true">$channel.title</a>
+                    <a class="nav-li collapsed" href="#left_$channel.hashCode()" data-toggle="collapse" aria-expanded="false">$channel.title</a>
                     <a data-toggle="collapse" href="#left_$channel.hashCode()"><span class="glyphicon glyphicon-plus gly"></span></a>
                     <ul id="left_$channel.hashCode()" class="collapse nav-detail">
                         #foreach($subChannel in $cms.getChildren($channel))
@@ -55,8 +55,6 @@
             #end
         </ol>
         <h1>$curArticle.name</h1>
-        ID: $curArticle.ID
-        id: $curArticle.id
         <div class="main-content" >
             $!{curArticle.content}
         </div>

@@ -1,3 +1,11 @@
+#set ($topChannel = $curChannel.parent)
+#if ($topChannel.parent.title != "首页")
+#set ($topChannel = $topChannel.parent)
+#end
+#if ($topChannel.parent != "首页")
+#set ($topChannel = $topChannel.parent)
+#end
+
 <header class="full-col">
     <figure id="logo" class="col-xs-12 col-sm-4 col-md-4 "><a href="#"><img src="images/logo.png" border="0" id="header_cuhk_logo"></a></figure>
     <div class="col-xs-12 hidden-xs col-sm-8 col-md-8">
@@ -31,7 +39,7 @@
                     #set($channels = ["学院概况", "系所中心", "师资队伍", "教育教学", "学术研究"])
                     #foreach ($channel in $channels)
                     <li class="col-lg-2 col-sm-2 col-md-2">
-                        <a href="#" class="hassub">$channel</a>
+                        <a href="$cms.getUrl($channel)" #if($channels == $topChannel.title) class="hassub hover" #else class="hassub" #end >$channel</a>
                         <ul style="display: none;">
                             #foreach($subChannel in $cms.getChildren($channel))
                             <li><a href="$cms.getUrl($subChannel)">$subChannel.title</a></li>

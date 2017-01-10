@@ -113,6 +113,10 @@ a.hassub:hover {
 	color: #fff;
 	background-color: #5c307d;
 }
+a.hassub.hover {
+    color: #fff;
+    background-color: #5c307d;
+}
 .homepage-slider { 
     margin: 0 auto;
     width: 100%;
