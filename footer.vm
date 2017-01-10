@@ -1,0 +1,20 @@
+<footer class="col-xs-12" id="footer">
+        <div class="relative">
+            <div class="inner">
+                <div class="relative-button">
+                   <a href="#" target="_blank" role="button" class="small_bu"><img src="images/mainpage.png">云大主页</a>
+                   <a href="#" target="_blank" role="button" class="small_bu"><img src="images/net.png">网络办公</a>
+                   <a href="#"  role="button" class="small_bu"><img src="images/collection.png">收藏本页</a>
+                   <a href="#" target="_blank" role="button" class="small_bu"><img src="images/contact.png">联系我们</a>       
+                </div>
+            </div>
+        </div>
+
+        <div id="bottom">
+            <span>Copyright © 2016</span>       
+            <span >地址: 云南大学人文学院</span>   
+            <span >邮编：650091</span>
+            <span ><img src="images/qrcode.jpg" id="qrcode"></span>
+        </div>
+
+</footer>

@@ -1,0 +1,59 @@
+<header class="full-col">
+    <figure id="logo" class="col-xs-12 col-sm-4 col-md-4 "><a href="#"><img src="images/logo.png" border="0" id="header_cuhk_logo"></a></figure>
+    <div class="col-xs-12 hidden-xs col-sm-8 col-md-8">
+        <div id="search_lang_nav">
+          <div><a href="" class="en">English Version</a></div>
+          <div id="siteSearchwrapper">
+            <form name="sitesearchboxForm" action="" method="get" target="_blank" id="sitesearchboxForm">
+              <input type="search" placeholder="搜索" name="query" id="sitesearchbox" >
+              <input type="image" src="images/btn_search.png" id="siteSearchbox_submit" >
+            </form>
+          </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid nav-wrap">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#collapse-phone" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="collapse-phone">
+                <ul class="mynav row " id="mynav">
+                    <li class="col-lg-2 col-sm-2 col-md-2">
+                        <a href="/" class="nav-current">学院首页</a>
+                    </li>
+                    #set($channels = ["学院概况", "系所中心", "师资队伍", "教育教学", "学术研究"])
+                    #foreach ($channel in $channels)
+                    <li class="col-lg-2 col-sm-2 col-md-2">
+                        <a href="#" class="hassub">$channel</a>
+                        <ul style="display: none;">
+                            #foreach($subChannel in $cms.getChildren($channel))
+                            <li><a href="$cms.getUrl($subChannel)">$subChannel.title</a></li>
+                            #end
+                        </ul>
+                    </li>
+                    #end
+                </ul>
+                <ul class="mynav row " id="mynav">
+                    #set($channels = ["党建工作", "团学工作", "教工之家", "校友天地", "合作交流"])
+                    #foreach ($channel in $channels)
+                    <li class="col-lg-2 col-sm-2 col-md-2">
+                        <a href="#" class="hassub">$channel</a>
+                        <ul style="display: none;">
+                            #foreach($subChannel in $cms.getChildren($channel))
+                            <li><a href="$cms.getUrl($subChannel)">$subChannel.title</a></li>
+                            #end
+                        </ul>
+                    </li>
+                    #end
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
