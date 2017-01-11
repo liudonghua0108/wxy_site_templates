@@ -25,7 +25,7 @@
       <img src="images/banner.jpg">
   </div>
   <div class="row">
-    <section class="col-lg-3 col-sm-3 col-md-3">
+    <section class="col-lg-3 col-md-3 col-sm-4 hidden-xs">
         <div class="leftmenu">
             <h3>$curChannel.parent.title</h3>
             <ul class="nav-left">
@@ -48,7 +48,7 @@
             </ul>
         </div>
     </section>
-    <section class="right col-lg-9 col-sm-9 col-md-9">
+    <section class="col-lg-9 col-md-9 col-sm-8">
         <ol class="breadcrumb">
             #foreach($channel in $cms.getPathChannels($curChannel))
             <li><a href="$cms.getUrl($channel)">$channel.title</a></li>
@@ -58,6 +58,9 @@
         <div class="main-list" >
             　 <ul class="news-list">
                     #if ($cms.getChildren($curChannel).size() > 0)
+                        #foreach($article in $cms.getContents($curChannel, 5))
+                        <li><p><a href="$cms.getUrl($article)" target="_blank">#summary($article.name 25)</a><span>$cms.format($article.publishDate)</span></p></li>
+                        #end
                         #foreach($subChannel in $cms.getChildren($curChannel))
                             #foreach($article in $cms.getContents($subChannel, 5))
                             <li><p><a href="$cms.getUrl($article)" target="_blank">#summary($article.name 25)</a><span>$cms.format($article.publishDate)</span></p></li>

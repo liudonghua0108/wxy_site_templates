@@ -67,9 +67,17 @@
     <section id="homepage_content" class="full-col">
       <aside id="homepage_content_left" class="col-sm-3 hidden-xs">
           <div id="news" class="col-xs-12">
-              <h2 class="item-title" id="title-news">学院新闻</h2>
+              <h2 class="item-title" id="title-news">学院要闻</h2>
               <ul class="news-list">
-                #foreach($article in $cms.getContents("学院新闻",10))
+                #foreach($article in $cms.getContents("学院要闻",5))
+                <li><p><a href="$cms.getUrl($article)" target="_blank">#summary($article.name 25)</a></p></li>
+                #end
+              </ul>
+          </div>
+          <div id="news" class="col-xs-12">
+              <h2 class="item-title" id="title-news">通知公告</h2>
+              <ul class="news-list">
+                #foreach($article in $cms.getContents("通知公告",5))
                 <li><p><a href="$cms.getUrl($article)" target="_blank">#summary($article.name 25)</a></p></li>
                 #end
               </ul>
