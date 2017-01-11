@@ -36,19 +36,19 @@
                 <div class="carousel-inner">
                     <div class="item">
                         <a> 
-                            <img src="images/jonathan_g_main_xb5.gif" alt="Second slide">
+                            <img src="images/carousel1.jpg" alt="Second slide">
                         </a>
                     </div>
                 
                     <div class="item active">
                         <a> 
-                            <img src="images/harris-matthew_xb5.jpg" alt="Second slide">
+                            <img src="images/carousel2.jpg" alt="Second slide">
                         </a>
                     </div>
                 
                     <div class="item">
                         <a> 
-                            <img src="images/lam_hm_main_xb5.jpg" alt="Second slide">
+                            <img src="images/carousel3.jpg" alt="Second slide">
                         </a>
                     </div>
                 
@@ -67,7 +67,7 @@
     <section id="homepage_content" class="full-col">
       <aside id="homepage_content_left" class="col-sm-3 hidden-xs">
           <div id="news" class="col-xs-12">
-              <h2 class="item-title" id="title-news">学院要闻</h2>
+              <a class="item-title" id="title-news">学院要闻</a>
               <ul class="news-list">
                 #foreach($article in $cms.getContents("学院要闻",5))
                 <li><p><a href="$cms.getUrl($article)" target="_blank">#summary($article.name 25)</a></p></li>
@@ -75,7 +75,7 @@
               </ul>
           </div>
           <div id="news" class="col-xs-12">
-              <h2 class="item-title" id="title-news">通知公告</h2>
+              <a class="item-title" id="title-news">通知公告</a>
               <ul class="news-list">
                 #foreach($article in $cms.getContents("通知公告",5))
                 <li><p><a href="$cms.getUrl($article)" target="_blank">#summary($article.name 25)</a></p></li>
@@ -88,9 +88,8 @@
             <div class="home_subsection">
                 <h2 class="item-title" id="title-tea">名师风采</h2>
                 <article>
-                    <a href="">
-                        <img src="images/nsl486-viva-voce01.jpg">
-                        <p>名师名</p>
+                    <a href="$cms.getUrl('名师风采')">
+                        <img src="images/mingshi.jpg">
                         <div class="more"><button class="btn">更多名师</button></div>
                     </a>
 
@@ -100,9 +99,8 @@
             <div class="home_subsection">
                 <h2 class="item-title" id="title-resource">教学资源</h2>
                 <article>
-                    <a href="">
-                        <img src="images/re.jpg">
-                        <p>资源名称</p>
+                    <a href="$cms.getUrl('教学资源')">
+                        <img src="images/jiaoxue.jpg">
                          <div class="more"><button class="btn">更多资源</button></div>
                     </a>
                 </article>
@@ -113,9 +111,8 @@
             <div class="home_subsection">
                 <h2 class="item-title" id="title-lecture">文典讲坛</h2>
                 <article>
-                    <a href="">
-                        <img src="images/cutv-shaw-prize20161104.jpg">
-                        <p>讲座名</p>
+                    <a href="$cms.getUrl('文典讲坛')">
+                        <img src="images/wendian.jpg">
                         <div class="more"><button class="btn">更多讲座</button></div>
                     </a>
                 </article>
@@ -124,9 +121,8 @@
             <div class="home_subsection">
                 <h2 class="item-title" id="title-view">莘莘学子</h2>
                 <article>
-                    <a href="">
-                        <img src="images/20150130075202250160.jpg">
-                        <p>活动名</p>
+                    <a href="$cms.getUrl('莘莘学子')">
+                        <img src="images/shenshen.jpg">
                         <div class="more"><button class="btn">更多活动</button></div>
                     </a>
                 </article>
